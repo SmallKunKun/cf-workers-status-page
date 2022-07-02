@@ -1,5 +1,5 @@
 settings:
-  title: 'Status Page'
+  title: '监控 - SmallKunKun'
   url: 'https://status-page.eidam.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
@@ -16,7 +16,7 @@ settings:
 
 monitors:
   - id: Home-Page # unique identifier
-    name: kunkun.eu.org
+    name: 博客
     description:  # default=empty
     url: 'https://kunkun.eu.org/' # URL to fetch
     method: GET # default=GET
@@ -25,7 +25,7 @@ monitors:
     linkable: true # allows the title to be a link, default=true
 
   - id: Pan
-    name: pan.kunkun.eu.org
+    name: 网盘
     description: 
     url: 'https://pan.kunkun.eu.org/'
     method: GET
@@ -33,7 +33,7 @@ monitors:
     linkable: true # allows the title to be a link, default=true
 
   - id: Start
-    name: search.kunkun.eu.org
+    name: 起始
     url: 'https://search.kunkun.eu.org/'
     method: GET
     expectStatus: 200
